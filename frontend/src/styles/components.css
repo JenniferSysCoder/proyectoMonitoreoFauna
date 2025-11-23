@@ -1,0 +1,23 @@
+.panel-container {
+  padding: 30px;
+}
+
+.card {
+  background-color: #152238;
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid #1f2937;
+}
+
+.button-green {
+  background-color: var(--color-green);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button-green:hover {
+  background-color: var(--color-green-dark);
+}

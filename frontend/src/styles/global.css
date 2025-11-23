@@ -1,0 +1,19 @@
+/* Importar módulos */
+@import "./variables.css";
+@import "./layout.css";
+@import "./sidebar.css";
+@import "./topbar.css";
+@import "./components.css";
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+}

@@ -1,0 +1,17 @@
+:root {
+  --color-bg-dark: #0f172a;
+  --color-bg-sidebar: #111827;
+  --color-bg-topbar: #1f2937;
+
+  --color-text: #e5e7eb;
+  --color-text-light: #9ca3af;
+  --color-white: #ffffff;
+
+  --color-green: #059669;
+  --color-green-dark: #065f46;
+
+  --color-gray-hover: #1f2937;
+  --color-divider: #374151;
+
+  --radius: 8px;
+}

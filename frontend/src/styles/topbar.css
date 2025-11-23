@@ -1,0 +1,47 @@
+.topbar {
+  background-color: #1f2937;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #2c3445;
+  gap: 14px;
+}
+
+/* Hamburguesa móvil */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger div {
+  width: 22px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+/* TÍTULO A LA IZQUIERDA */
+.topbar-title-left {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-left: 4px;
+}
+
+/* Avatar */
+.user-avatar {
+  margin-left: auto; /* Empuja el avatar hacia la derecha */
+  width: 34px;
+  height: 34px;
+  background: gray;
+  border-radius: 50%;
+}
+
+/* Mostrar hamburguesa en móvil */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
