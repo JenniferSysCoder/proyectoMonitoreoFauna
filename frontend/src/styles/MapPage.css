@@ -1,0 +1,143 @@
+.map-page-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 100px);
+}
+
+/* CARD DEL MAPA */
+.map-card {
+  flex: 2;
+  background: #0f1b2b;
+  border-radius: 18px;
+  padding: 15px;
+  height: 75vh;
+}
+
+/* BUSCADOR */
+.map-search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-search {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: none;
+  background: #0b1623;
+  color: white;
+  font-size: 14px;
+}
+
+.search-btn {
+  background: #0b1623;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+/* MAPA */
+.map-box {
+  height: 65vh;
+  margin-top: 12px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* PANEL LATERAL */
+.map-info-card {
+  flex: 1;
+  background: #0f1b2b;
+  padding: 20px;
+  border-radius: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* INPUT DEL NOMBRE */
+.input-name {
+  width: 100%;
+  padding: 10px 12px;
+  background: #0b1623;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN DE GUARDAR */
+.save-btn {
+  background: #0077ff;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.label-device {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.coords-box {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background: #0b1623;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.coords-box p {
+  margin: 4px 0;
+}
+
+.search-btn svg {
+  color: white;
+}
+
+/* 📱 RESPONSIVE MÓVILES */
+@media (max-width: 768px) {
+  .map-page-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .map-card {
+    height: 55vh;
+  }
+
+  .map-box {
+    height: 45vh;
+  }
+
+  .map-info-card {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+  .map-card {
+    height: 60vh;
+  }
+
+  .map-box {
+    height: 50vh;
+  }
+}

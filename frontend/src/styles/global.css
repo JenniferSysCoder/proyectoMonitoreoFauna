@@ -4,6 +4,7 @@
 @import "./sidebar.css";
 @import "./topbar.css";
 @import "./components.css";
+@import "leaflet/dist/leaflet.css";
 
 /* RESET BÁSICO */
 * {

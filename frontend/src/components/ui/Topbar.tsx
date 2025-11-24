@@ -10,7 +10,7 @@ export function Topbar({ onToggleSidebar }: { onToggleSidebar: () => void }) {
     "/map": "Map",
     "/alerts": "Alerts",
     "/settings": "Settings",
-    "/support": "Support",
+    "/support": "Acerca de",
   };
 
   const title = titles[pathname] || "";

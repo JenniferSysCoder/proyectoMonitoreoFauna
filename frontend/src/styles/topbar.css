@@ -5,6 +5,11 @@
   align-items: center;
   border-bottom: 1px solid #2c3445;
   gap: 14px;
+
+  /* FIX: que no tape sidebar */
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
 /* Hamburguesa móvil */
@@ -32,7 +37,7 @@
 
 /* Avatar */
 .user-avatar {
-  margin-left: auto; /* Empuja el avatar hacia la derecha */
+  margin-left: auto;
   width: 34px;
   height: 34px;
   background: gray;

@@ -5,6 +5,7 @@ import { DashboardPage } from "../pages/Dashboard/DashboardPage";
 import { GalleryPage } from "../pages/Gallery/GalleryPage";
 import { MapPage } from "../pages/Map/MapPage";
 import { AlertsPage } from "../pages/Alerts/AlertsPage";
+import { AboutPage } from "../pages/Support/AboutPage";
 
 export function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ export function AppRoutes() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/alerts" element={<AlertsPage />} />
+          <Route path="/support" element={<AboutPage />} />
         </Routes>
       </DashboardLayout>
     </BrowserRouter>

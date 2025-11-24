@@ -8,6 +8,12 @@
   display: flex;
   flex-direction: column;
   transition: left 0.3s ease-in-out;
+
+  /* FIX: sidebar fijo también en PC */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .sidebar-logo h1 {
@@ -62,11 +68,7 @@
 /* ---------- MÓVIL ---------- */
 @media (max-width: 768px) {
   .sidebar {
-    position: fixed;
     left: -260px; /* oculto */
-    top: 0;
-    height: 100vh;
-    z-index: 999;
   }
 
   .sidebar.open {
@@ -79,4 +81,19 @@
   height: 16px;
   color: #9ca3af; /* gris sutil */
   flex-shrink: 0;
+}
+
+/* Fondo oscuro cuando el menú está abierto en móvil */
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-overlay.show {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9900;
+  }
 }
